@@ -1,9 +1,9 @@
 # troubleshooting Guide
 
-##Issue: 404 Not Found
+## Issue: 404 Not Found
 **Cause:** Incorrect endpoint
 **Solution:** Verify the URL and endpoint path.
 
-##Issue: Empty Response 
+## Issue: Empty Response 
 **Cause:** Network issue 
 **Solution:** Check internet connection
