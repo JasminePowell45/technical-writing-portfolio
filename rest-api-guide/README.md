@@ -20,9 +20,24 @@ REST APIs typically use HTTP (Hypertext Transfer Protocol), the same protocol((c
 ```
 
 ### Client and Server
+In a REST API, the client is the application that sends a request.
+The server is the application that receives and returns a response.
+
+For example, a web browser can act as a client, while a backend service acts as the server.
+
 ### Requests and Responses 
+Explain how data is exchanged 
+
 ### HTTP Methods
-### Status Codes 
+Explain GET, POST, PUT, DELETE.
+
+### Statud Codes 
+HTTP status codes indicates whether a request was successful or failed. 
+
+Common status codes include:
+- 200 OK: The request was successful
+- 404 Not Found: The requested resource does not exist
+- 500 Internal Server Error: The server encountered an error
 
 ## Example: A Simple REST API 
 This example uses the JSONPlaceholder API, which provides fake data for testing and learning purposes. 
