@@ -75,9 +75,8 @@ Common status codes include:
 
 ## How a REST API Works (Diagram)
 This diagram shows how a client sends a HTTP request to a server and receives a JSON response.
-```
 ![REST API Diagram](downlaods/REST-API.png)
-```
+
 
 ## Additional Documentation 
 - [Setup Guide](./setup-guide.md)
@@ -87,3 +86,8 @@ This diagram shows how a client sends a HTTP request to a server and receives a 
 ## Summary 
 REST APIs allow applications to communicate using standard HTTP methods.
 By sending requests and receiving structured responses, applications can exchange data efficiently.
+
+## References 
+- Mozilla Developer Network (MDN). (n.d.). REST. https://developer.mozilla.org/en-US/docs/Glossary/REST
+- Github Docs. (n.d.). API Reference. Https://docs.github.com/en/rest
+
