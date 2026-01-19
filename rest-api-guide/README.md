@@ -13,7 +13,11 @@ It is a design style that defines how applications should communicate using stan
 REST APIs typically use HTTP (Hypertext Transfer Protocol), the same protocol((code)) used by web browsers.
 
 ## Key REST Concepts
+
 ## How a REST API Works (Diagram)
+```
+![REST API Diagram](downlaods/REST-API.png)
+```
 
 ### Client and Server
 ### Requests and Responses 
