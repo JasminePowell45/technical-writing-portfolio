@@ -13,6 +13,8 @@ It is a design style that defines how applications should communicate using stan
 REST APIs typically use HTTP (Hypertext Transfer Protocol), the same protocol((code)) used by web browsers.
 
 ## Key REST Concepts
+## How a REST API Works (Diagram)
+
 ### Client and Server
 ### Requests and Responses 
 ### HTTP Methods
@@ -43,6 +45,7 @@ Each object in the response represents a user.
 The `id` field uniquely identifies the user's name.
 The `name` field contains the user's name.
 The `email` field contains the user's email address.
+
 
 ## Common Errors
 - **404 Not Found**: The requested endpoint does not exist.
