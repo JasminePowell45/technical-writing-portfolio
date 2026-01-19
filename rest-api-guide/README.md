@@ -50,11 +50,10 @@ The `id` field uniquely identifies the user's name.
 The `name` field contains the user's name.
 The `email` field contains the user's email address.
 
-
-## Common Errors
-- **404 Not Found**: The requested endpoint does not exist.
-- **400 Bad Request**: The request is malformed.
-- **500 Internal Server Error**: The serever encountered an errorr.
+## Documentation 
+- [Setup Guide](./setup-guide.md)
+- [API Reference](./api-reference.md)
+- [Troubleshooting Guide](./troubleshooting.md)
 
 ## Summary 
 REST APIs allow applications to communicate using standard HTTP methods.
