@@ -10,14 +10,10 @@ REST APIs are one of the most common ways applications exchange data over the in
 REST stands for Representational State Transfer.
 It is a design style that defines how applications should communicate using standard web protocols.
 
-REST APIs typically use HTTP (Hypertext Transfer Protocol), the same protocol((code)) used by web browsers.
+REST APIs typically use HTTP (Hypertext Transfer Protocol), the same protocol used by web browsers.
+
 
 ## Key REST Concepts
-
-## How a REST API Works (Diagram)
-```
-![REST API Diagram](downlaods/REST-API.png)
-```
 
 ### Client and Server
 In a REST API, the client is the application that sends a request.
@@ -26,18 +22,49 @@ The server is the application that receives and returns a response.
 For example, a web browser can act as a client, while a backend service acts as the server.
 
 ### Requests and Responses 
-Explain how data is exchanged 
+Communication in a REST API happens through requests and responses.
+
+A request contains:
+- A URL (endpoint)
+- An HTTP method
+- Optional headers or data
+
+The server processess the request and returns a response, which typically includes:
+- A status code
+- Response data in JSON (Javascript Object Notation)
+
+REST APIs commonly exchange data using JSON.
+JSON is a lightweight data format that represents information using key-value pairs.
+It is easy for both humans and machines to read and write. 
+
+In a REST API, the server typically returns responses in JSON format, allowing the client to easily parse and use the data.
+
+For example, a client may send a request to retrieve user data, and the server responds with a list of users in JSON format.
 
 ### HTTP Methods
-Explain GET, POST, PUT, DELETE.
+HTTP methods define the action a client wants to perform on a resource. 
 
-### Statud Codes 
+Common HTTP methods include:
+- **GET**: Retrieve data from the server
+- **POST**: Send new data to the server
+- **PUT**: Update exisiting data
+- **DELETE**: Remove data from the server
+
+Each method represents a specific type of operation that can be performed on a resource.
+
+### Status Codes 
 HTTP status codes indicates whether a request was successful or failed. 
 
 Common status codes include:
 - 200 OK: The request was successful
 - 404 Not Found: The requested resource does not exist
 - 500 Internal Server Error: The server encountered an error
+
+## How a REST API Works (Diagram)
+This diagram shows how a client sends a HTTP request to a server and receives a JSON response.
+```
+![REST API Diagram](downlaods/REST-API.png)
+```
 
 ## Example: A Simple REST API 
 This example uses the JSONPlaceholder API, which provides fake data for testing and learning purposes. 
@@ -47,10 +74,10 @@ Below is an example of a GET request that retrieves a list of users.
 
 GET https://jsonplaceholder.typicode.com/users
 
-##Understanding the Response 
+## Understanding the Response 
 The API returns data in JSON format. 
 
-Example responses: 
+Example responses:  
 ```json
 [
  {
@@ -65,7 +92,7 @@ The `id` field uniquely identifies the user's name.
 The `name` field contains the user's name.
 The `email` field contains the user's email address.
 
-## Documentation 
+## Additional Documentation 
 - [Setup Guide](./setup-guide.md)
 - [API Reference](./api-reference.md)
 - [Troubleshooting Guide](./troubleshooting.md)
