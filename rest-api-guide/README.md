@@ -43,7 +43,7 @@ Example responses:
 ```json
 [
  {
-    "id: 1,
+    "id": 1,
     "name": "Leanne Graham",
     "email": "leanne@example.com"
  }
