@@ -76,9 +76,7 @@ Common status codes include:
 
 ## How a REST API Works (Diagram)
 This diagram shows how a client sends a HTTP request to a server and receives a JSON response.
-<p align="center"
-  <img src="REST-API1.png" alt="REST API Diagram" width="600">
-</p>
+![REST API Diagram](REST-API1.png)
 
 
 
