@@ -3,7 +3,7 @@
 
 ## Overview 
 An API (Application Programming Interface) allows software applications to communicate with each other.
-Instead of interacting directly with a user interface, one program a request to another program and receives a response. 
+Instead of interacting directly with a user interface, one program sends a request to another program and receives a response. 
 
 REST APIs are one of the most common ways applications exchange data over the internet.
 
@@ -61,7 +61,7 @@ HTTP methods define the action a client wants to perform on a resource.
 Common HTTP methods include:
 - **GET**: Retrieve data from the server
 - **POST**: Send new data to the server
-- **PUT**: Update exisiting data
+- **PUT**: Update existing data
 - **DELETE**: Remove data from the server
 
 Each method represents a specific type of operation that can be performed on a resource.
@@ -94,3 +94,5 @@ By sending requests and receiving structured responses, applications can exchang
 - Mozilla Developer Network (MDN). (n.d.). REST. https://developer.mozilla.org/en-US/docs/Glossary/REST
 - Github Docs. (n.d.). API Reference. Https://docs.github.com/en/rest
 
+**About this document
+This guide was created as a portfolio project to demonstrate beginner-friendly technical documentation, API concepts, and Github-based workflows.
