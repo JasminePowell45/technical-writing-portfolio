@@ -39,7 +39,20 @@ It is easy for both humans and machines to read and write.
 
 In a REST API, the server typically returns responses in JSON format, allowing the client to easily parse and use the data.
 
-For example, a client may send a request to retrieve user data, and the server responds with a list of users in JSON format.
+Example responses:  
+```json
+[
+ {
+    "id: 1,
+    "name": "Leanne Graham",
+    "email": "leanne@example.com"
+ }
+]
+```
+Each object in the response represents a user.
+The `id` field uniquely identifies the user's name.
+The `name` field contains the user's name.
+The `email` field contains the user's email address.
 
 ### HTTP Methods
 HTTP methods define the action a client wants to perform on a resource. 
@@ -65,32 +78,6 @@ This diagram shows how a client sends a HTTP request to a server and receives a 
 ```
 ![REST API Diagram](downlaods/REST-API.png)
 ```
-
-## Example: A Simple REST API 
-This example uses the JSONPlaceholder API, which provides fake data for testing and learning purposes. 
-
-## Making a Request 
-Below is an example of a GET request that retrieves a list of users. 
-
-GET https://jsonplaceholder.typicode.com/users
-
-## Understanding the Response 
-The API returns data in JSON format. 
-
-Example responses:  
-```json
-[
- {
-    "id: 1,
-    "name": "Leanne Graham",
-    "email": "leanne@example.com"
- }
-]
-```
-Each object in the response represents a user.
-The `id` field uniquely identifies the user's name.
-The `name` field contains the user's name.
-The `email` field contains the user's email address.
 
 ## Additional Documentation 
 - [Setup Guide](./setup-guide.md)
