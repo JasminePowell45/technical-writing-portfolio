@@ -1,98 +1,112 @@
 
-# How a REST API Works (Beginner-Friendly Guide)
+# Athlete API
 
 ## Overview 
-An API (Application Programming Interface) allows software applications to communicate with each other.
-Instead of interacting directly with a user interface, one program sends a request to another program and receives a response. 
+Athlete API is a simple Express.js server to track basketball players.
+It allows you to:
+- View all players
+- Add a new player
 
-REST APIs are one of the most common ways applications exchange data over the internet.
+This project demonstrates a RESTful API with GET anf POST endpoints and serves as a portfolio example for technical writing and backend development.
 
-## What is REST?
-REST stands for Representational State Transfer.
-It is a design style that defines how applications should communicate using standard web protocols.
+---
 
-REST APIs typically use HTTP (Hypertext Transfer Protocol), the same protocol used by web browsers.
-
-
-## Key REST Concepts
-
-### Client and Server
-In a REST API, the client is the application that sends a request.
-The server is the application that receives and returns a response.
-
-For example, a web browser can act as a client, while a backend service acts as the server.
-
-### Requests and Responses 
-Communication in a REST API happens through requests and responses.
-
-A request contains:
-- A URL (endpoint)
-- An HTTP method
-- Optional headers or data
-
-The server processess the request and returns a response, which typically includes:
-- A status code
-- Response data in JSON (Javascript Object Notation)
-
-REST APIs commonly exchange data using JSON.
-JSON is a lightweight data format that represents information using key-value pairs.
-It is easy for both humans and machines to read and write. 
-
-In a REST API, the server typically returns responses in JSON format, allowing the client to easily parse and use the data.
-
-Example responses:  
-```json
-[
- {
-    "id": 1,
-    "name": "Leanne Graham",
-    "email": "leanne@example.com"
- }
-]
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone <YOUR_REPO_URL>
+3. Navigate into the folder:
+```bash
+cd athlete-api
 ```
-Each object in the response represents a user.
-The `id` field uniquely identifies the user's name.
-The `name` field contains the user's name.
-The `email` field contains the user's email address.
+6. Install dependencies:
+```bash
+npm install
+```
+8. Start the server:
+```bash
+node index.js
+```
+10. The server will run on `http://localhost:3000/`
+   
 
-### HTTP Methods
-HTTP methods define the action a client wants to perform on a resource. 
+## Endpoints
 
-Common HTTP methods include:
-- **GET**: Retrieve data from the server
-- **POST**: Send new data to the server
-- **PUT**: Update existing data
-- **DELETE**: Remove data from the server
+### GET/
+- Description: Check if API is running
+- URL: `http:localhost:3000/`
+- Method: GET
+- Example Response:
+```json
+{
+ "message": "API is running"
+}
+```
 
-Each method represents a specific type of operation that can be performed on a resource.
+### GET/players
+- Description: Retrieve list of basketball players
+- URL: http://localhost:3000/players
+- Method: GET
+- Example Response
+```json
+   {
+        "id": 1,
+        "name": "John Doe",
+        "position": "Guard"
+    },
+    {
+        "id": 2,
+        "name": "Mike Smith",
+        "position": "Forward"
+    }
+```
+- Terminal Output:
+```
+GET /players HIT
+```
 
-### Status Codes 
-HTTP status codes indicates whether a request was successful or failed. 
 
-Common status codes include:
-- 200 OK: The request was successful
-- 404 Not Found: The requested resource does not exist
-- 500 Internal Server Error: The server encountered an error
+### POST /players
+- Description: Add a new player
+- URL: http://localhost:3000/players
+- Method: POST
+- Body Example:
+```json
+{
+	"name": "Chris Paul",
+    "position": "Guard"
+}
+```
+- Example Response:
+```json
+{
+    "message": "POST works",
+    "body": {
+        "name": "Chris Paul",
+        "position": "Guard"
+    }
+}
+```
+- Terminal Output:
+```
+POST /players HIT
+```
 
-## How a REST API Works (Diagram)
-This diagram shows how a client sends a HTTP request to a server and receives a JSON response.
-![REST API Diagram](REST-API2.png)
+### Future Improvements 
+- Connect to a database (MongoDB, PostgreSQL) to persist playes
+- Add input validation for POST requests
+- Implement DELETE and PATCH endpoints
+- Add authentication for secure access
 
 
+## Contributing
+Feel free to fork this repository and submit pull requests. 
+Before contributing:
+- Run npm install to install dependencies
+- Start the server with node index.js
 
 
-## Additional Documentation 
-- [Setup Guide](./setup-guide.md)
-- [API Reference](./api-reference.md)
-- [Troubleshooting Guide](./troubleshooting.md)
+## License
+This project is licensed under MIT License.
 
-## Summary 
-REST APIs allow applications to communicate using standard HTTP methods.
-By sending requests and receiving structured responses, applications can exchange data efficiently.
 
-## References 
-- Mozilla Developer Network (MDN). (n.d.). REST. https://developer.mozilla.org/en-US/docs/Glossary/REST
-- Github Docs. (n.d.). API Reference. Https://docs.github.com/en/rest
-
-**About this document
-This guide was created as a portfolio project to demonstrate beginner-friendly technical documentation, API concepts, and Github-based workflows.
