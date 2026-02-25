@@ -1,12 +1,13 @@
 # Athlete API
 
 ## Overview
-Athlete API is a simple Express.js server to track basketball players.
-It allows you to:
-- View all players
-- Add a new player
+Athlete API is a simple RESTful API built with Express.js for managing basketball player data.
 
-This project demonstrates a RESTful API with GET anf POST endpoints and serves as a portfolio example for technical writing and backend development.
+It allows clients to:
+- Retrieve a list of players
+- Create a new player resource
+
+This project demonstrates the structre and documentation of a RESTful API, including HTTP methods, status codes, request/response examples, and error handling. It serves as a portfolio example of technical writing and backend APIdocumentation. 
 
 ## Installation
 1. Clone the repository:
@@ -132,11 +133,14 @@ Example:
 
 
 ## Contributing
-Feel free to fork this repository and submit pull requests.
+This project is part of a technical writing portfolio.
+
+If you would like to suggest improvements, feel free to fork the repository and submit a pull request.
+
 Before contributing:
-- Run npm install to install dependencies
-- Start the server with node index.js
+- Install dependencies using `npm install`
+- Start the server with `node index.js`
 
 
 ## License
-This project is licensed under MIT License.
+This project is provided for educational and portfolio purposes only.
