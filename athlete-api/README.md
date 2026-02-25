@@ -88,6 +88,41 @@ GET /players HIT
 ```
 POST /players HIT
 ```
+## Error Handling
+The Athlete API returns standard HTTP status codes to indicate
+the success or failure of a request.
+
+### 200 0K
+Returned when a GET request is successful.
+---
+
+### 201 Created
+Returned when a new player is successfully created using the POST enpoint.
+---
+
+### 400 Bad Request
+Returned when required fields are missing in the request body.
+
+Example:
+```json
+{
+	"error": "Bad Request",
+	"message": "Both 'name' and 'position' are required."
+}
+```
+---
+
+### 404 Not Found
+Returned when the requested endpoint does not exist.
+
+Example:
+```json
+{
+	"error": "Not Found",
+	"message": "The requested endpoint does not exist."
+}
+```
+---
 
 ### Future Improvements
 - Connect to a database (MongoDB, PostgreSQL) to persist playes
