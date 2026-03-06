@@ -44,8 +44,3 @@ Step-by-step tutorial explaining how to containerize a Python application using 
 
 ## About Me
 I am a professional basketball player transitioning into technology. My experience in athletics has developed strong discipline, communication, and problem-solving skills that translate well into software development and technical writing.
-I am currently seeking opportunities in:
-- Technical Writing
-- QA / Software Testing
-- Developer Support
-- Software Developer
