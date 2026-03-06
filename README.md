@@ -1,5 +1,7 @@
 # Jasmine Powell - Technical Writing Portfolio
-Welcome to my technical writing portfolio. This repository serves as a central hub for documentation projects that demonstrate my ability to explain software clearly for technical and non technical audiences.
+Welcome to my portfolio. This repository serves as a central hub for documentation projects that demonstrate my ability to explain software clearly for technical and non technical audiences.
+
+--- 
 
 ## Projects
 
@@ -31,13 +33,43 @@ Step-by-step tutorial explaining how to containerize a Python application using 
 
 ---
 
+## Athlete Performance Tracker Documentation
+Product documentation for an application designed to help ahtletes track workouts, nutrition, and performance metrics.
+
+**Skills demonstrated**
+- Product documentation
+- User guides
+- Feature documentation
+- API references
+
+**Repository:**
+https://github.com/JasminePowell45/athlete-performance-tracker-docs
+
+---
+
+## Client Website Project
+A multi-page website created and maintained for three organizations within a single platform.
+
+**Skills demonstrated**
+- HTML
+- CSS
+- JavaScript
+- Frontend architecture
+- Real-World website maintenance
+
+**Repository:**
+https://www.metroequitylab.org/
+
+---
+
 ## Skills
 - Technical Writing
 - API Documentation
-- Product Documentation
 - Python
 - Docker
-- REST APIs
+- HTML
+- CSS
+- JavaScript
 - Git & Github
 
 ---
